@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79EABD952224B25E56D320AE /* libPods-A_Category.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9724E7726799A093C4851D8 /* libPods-A_Category.a */; };
 		CDC8EA532019AC8C0014B563 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC8EA522019AC8C0014B563 /* AppDelegate.m */; };
 		CDC8EA562019AC8C0014B563 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC8EA552019AC8C0014B563 /* ViewController.m */; };
 		CDC8EA592019AC8C0014B563 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC8EA572019AC8C0014B563 /* Main.storyboard */; };
 		CDC8EA5B2019AC8C0014B563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC8EA5A2019AC8C0014B563 /* Assets.xcassets */; };
 		CDC8EA5E2019AC8C0014B563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC8EA5C2019AC8C0014B563 /* LaunchScreen.storyboard */; };
 		CDC8EA612019AC8C0014B563 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC8EA602019AC8C0014B563 /* main.m */; };
+		CDC8EA6A2019AE1B0014B563 /* CTMediator+A.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC8EA692019AE1B0014B563 /* CTMediator+A.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C57321C24A4B0F80B154756 /* Pods-A_Category.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A_Category.debug.xcconfig"; path = "Pods/Target Support Files/Pods-A_Category/Pods-A_Category.debug.xcconfig"; sourceTree = "<group>"; };
+		57E4A7BB6EF009034F8E6060 /* Pods-A_Category.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A_Category.release.xcconfig"; path = "Pods/Target Support Files/Pods-A_Category/Pods-A_Category.release.xcconfig"; sourceTree = "<group>"; };
+		C9724E7726799A093C4851D8 /* libPods-A_Category.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-A_Category.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC8EA4E2019AC8C0014B563 /* A_Category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A_Category.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC8EA512019AC8C0014B563 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CDC8EA522019AC8C0014B563 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +31,8 @@
 		CDC8EA5D2019AC8C0014B563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDC8EA5F2019AC8C0014B563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC8EA602019AC8C0014B563 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDC8EA682019AE1B0014B563 /* CTMediator+A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+A.h"; sourceTree = "<group>"; };
+		CDC8EA692019AE1B0014B563 /* CTMediator+A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+A.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79EABD952224B25E56D320AE /* libPods-A_Category.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37FA31EC8EFB13FBC633C2AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9724E7726799A093C4851D8 /* libPods-A_Category.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		816AEEEF6AD8FC524EA6A270 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C57321C24A4B0F80B154756 /* Pods-A_Category.debug.xcconfig */,
+				57E4A7BB6EF009034F8E6060 /* Pods-A_Category.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CDC8EA452019AC8C0014B563 = {
 			isa = PBXGroup;
 			children = (
 				CDC8EA502019AC8C0014B563 /* A_Category */,
 				CDC8EA4F2019AC8C0014B563 /* Products */,
+				816AEEEF6AD8FC524EA6A270 /* Pods */,
+				37FA31EC8EFB13FBC633C2AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +85,7 @@
 		CDC8EA502019AC8C0014B563 /* A_Category */ = {
 			isa = PBXGroup;
 			children = (
+				CDC8EA672019AE0A0014B563 /* A_Category */,
 				CDC8EA512019AC8C0014B563 /* AppDelegate.h */,
 				CDC8EA522019AC8C0014B563 /* AppDelegate.m */,
 				CDC8EA542019AC8C0014B563 /* ViewController.h */,
@@ -71,6 +99,15 @@
 			path = A_Category;
 			sourceTree = "<group>";
 		};
+		CDC8EA672019AE0A0014B563 /* A_Category */ = {
+			isa = PBXGroup;
+			children = (
+				CDC8EA682019AE1B0014B563 /* CTMediator+A.h */,
+				CDC8EA692019AE1B0014B563 /* CTMediator+A.m */,
+			);
+			path = A_Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDC8EA642019AC8C0014B563 /* Build configuration list for PBXNativeTarget "A_Category" */;
 			buildPhases = (
+				65A77D687B9998FEB4E26569 /* [CP] Check Pods Manifest.lock */,
 				CDC8EA4A2019AC8C0014B563 /* Sources */,
 				CDC8EA4B2019AC8C0014B563 /* Frameworks */,
 				CDC8EA4C2019AC8C0014B563 /* Resources */,
+				DB2B2C84D9166FCCAB5EA577 /* [CP] Embed Pods Frameworks */,
+				1A8F51ACD5B705197C427138 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,12 +177,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A8F51ACD5B705197C427138 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-A_Category/Pods-A_Category-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65A77D687B9998FEB4E26569 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-A_Category-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB2B2C84D9166FCCAB5EA577 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-A_Category/Pods-A_Category-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CDC8EA4A2019AC8C0014B563 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CDC8EA562019AC8C0014B563 /* ViewController.m in Sources */,
+				CDC8EA6A2019AE1B0014B563 /* CTMediator+A.m in Sources */,
 				CDC8EA612019AC8C0014B563 /* main.m in Sources */,
 				CDC8EA532019AC8C0014B563 /* AppDelegate.m in Sources */,
 			);
@@ -276,6 +368,7 @@
 		};
 		CDC8EA652019AC8C0014B563 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C57321C24A4B0F80B154756 /* Pods-A_Category.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +383,7 @@
 		};
 		CDC8EA662019AC8C0014B563 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57E4A7BB6EF009034F8E6060 /* Pods-A_Category.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
